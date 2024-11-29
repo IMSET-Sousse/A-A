@@ -32,9 +32,6 @@
               <a class="nav-link" href="artists.html">Artistes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="panier.html">Panier</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="magazine.html">Magazine</a>
             </li>
             <li class="nav-item">
@@ -58,68 +55,15 @@
     <p class="lead">Nous serons ravis de répondre à toutes vos questions.</p>
   </div>
 
-  <section id="contact-form" class="container my-5">
-    <h2 class="text-center mb-4">Contactez-moi</h2>
-    <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-6">
-            <label for="firstName" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="firstName" placeholder="Votre prénom" required>
-            <div class="valid-feedback">C'est bon !</div>
-            <div class="invalid-feedback">Veuillez fournir votre prénom.</div>
-        </div>
-        <div class="col-md-6">
-            <label for="lastName" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="lastName" placeholder="Votre nom" required>
-            <div class="valid-feedback">C'est bon !</div>
-            <div class="invalid-feedback">Veuillez fournir votre nom.</div>
-        </div>
-        <div class="col-md-12">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Votre email" required>
-            <div class="valid-feedback">C'est bon !</div>
-            <div class="invalid-feedback">Veuillez entrer une adresse email valide.</div>
-        </div>
-        <div class="col-md-12">
-            <label for="subject" class="form-label">Objet</label>
-            <input type="text" class="form-control" id="subject" placeholder="Votre sujet" required>
-            <div class="valid-feedback">C'est bon !</div>
-            <div class="invalid-feedback">Veuillez fournir un objet.</div>
-        </div>
-        <div class="col-md-12">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="Votre message" required></textarea>
-            <div class="invalid-feedback">Veuillez fournir un message.</div>
-        </div>
-        <div class="col-12">
-            <center><button class="btn btn-primary" type="submit">Envoyer</button></center>
-        </div>
-    </form>
-</section>
-<script>
-    (() => {
-        'use strict'
-        
-        const forms = document.querySelectorAll('.needs-validation')
-        
-        Array.from(forms).forEach(form => {
-            form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-                form.classList.add('was-validated')
-            }, false)
-        })
-    })();
-</script>
-<section id="location-map" class="container my-5">
+  <!-- Suppression de la section du formulaire de contact -->
+
+  <section id="location-map" class="container my-5">
     <h2 class="text-center mb-4">Notre Localisation</h2>
     <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.222132441351!2d10.639970499999998!3d35.825372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1302b99db2dbe539%3A0xd3d7c34b1b27f8b9!2sA%26A%20Gallery!5e0!3m2!1sen!2stn!4v1637632419145!5m2!1sen!2stn" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </section>
   
-
   <footer class="container-fluid">
     <div class="container">
       <div id="footer-details" class="row align-items-center">
